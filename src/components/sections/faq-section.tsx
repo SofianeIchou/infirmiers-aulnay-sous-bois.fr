@@ -1,35 +1,41 @@
 "use client";
 
-import Image from "next/image";
+import type { Variants } from "framer-motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const faqData = [
   {
     question: "Quel est le rôle de l'Infirmièr(e) libéral(e)?",
     answer:
       "L'infirmier(e) libéral(e) réalise des soins à domicile tels que les pansements, les injections et l'administration des traitements. Il/elle assure le suivi de l'état de santé du patient, aide au maintien de l'autonomie, et veille à la coordination avec d'autres professionnels de santé. De plus, il/elle prend en charge les démarches administratives liées aux soins et informe le médecin traitant de l'évolution du patient.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-1-4.webp",
+    imageSrc:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-1-4.webp",
     alt: "Infirmière libérale prodiguant un soin à un patient.",
   },
   {
-    question: "Les soins à domicile sont-ils remboursés par la Sécurité Sociale ?",
+    question:
+      "Les soins à domicile sont-ils remboursés par la Sécurité Sociale ?",
     answer:
       "Oui, les soins infirmiers à domicile sont généralement pris en charge par la Sécurité Sociale, à condition d'avoir une prescription médicale. Nous nous chargeons de la facturation et pouvons vous renseigner sur les démarches à suivre.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-2-5.webp",
+    imageSrc:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-2-5.webp",
     alt: "Carte vitale pour le remboursement des soins infirmiers.",
   },
   {
     question: "Acceptez-vous les urgences ?",
     answer:
       "Oui, nous intervenons en urgence selon la disponibilité de notre équipe. Si vous avez besoin de soins urgents, n’hésitez pas à nous contacter directement pour organiser une intervention rapide.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-3-6.webp",
+    imageSrc:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-3-6.webp",
     alt: "Matériel médical pour les interventions d'urgence.",
   },
   {
     question: "Comment se passe le suivi de mes soins à domicile ?",
     answer:
       "Nous mettons en place un suivi personnalisé en fonction de vos besoins de santé. Chaque intervention est planifiée et adaptée en fonction de votre évolution. Notre équipe est à votre écoute pour toute question ou besoin supplémentaire durant votre traitement.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-4-7.webp",
+    imageSrc:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-4-7.webp",
     alt: "Infirmière effectuant le suivi des soins à domicile d'un patient.",
   },
   {
@@ -37,7 +43,8 @@ const faqData = [
       "Que faire en cas de changement de mon état de santé ou si mes soins évoluent ?",
     answer:
       "Si votre état de santé change ou si vous avez de nouvelles prescriptions, il est important de nous en informer rapidement. Nous adapterons les soins en fonction de l'évolution de votre situation. Vous pouvez nous contacter directement pour discuter de toute modification nécessaire.",
-    imageSrc: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-5-8.webp",
+    imageSrc:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/faq-5-8.webp",
     alt: "Gros plan sur une seringue pour l'administration de médicaments.",
   },
 ];
@@ -52,7 +59,7 @@ const FaqSection = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: 50 },
     visible: {
       opacity: 1,
