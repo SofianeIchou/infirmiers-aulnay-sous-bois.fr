@@ -17,16 +17,16 @@ const parseTextWithBold = (text: string, boldWords: string[]): React.ReactNode =
 const InfoSection = () => {
   const contentItems = [
     {
-      text: "Soins infirmiers sur prescription médicale et uniquement sur rendez-vous à Sevran et alentours. Nous assurons une prise en charge complète avec remboursement Sécurité Sociale.",
-      boldWords: ["Soins infirmiers sur prescription médicale", "rendez-vous à Sevran et alentours", "remboursement Sécurité Sociale"]
+      text: "Soins infirmiers sur prescription médicale et uniquement sur rendez-vous à Aulnay-sous-Bois et alentours. Nous assurons une prise en charge complète avec remboursement Sécurité Sociale.",
+      boldWords: ["Soins infirmiers sur prescription médicale", "Aulnay-sous-Bois et alentours", "remboursement Sécurité Sociale"]
     },
     {
       text: "Nous acceptons la carte vitale, la CMU, et tous les régimes de mutuelles. Nos infirmières libérales conventionnées facilitent vos démarches de tiers payant.",
       boldWords: ["carte vitale", "CMU", "tous les régimes de mutuelles", "infirmières libérales conventionnées", "tiers payant"]
     },
     {
-      text: "En cas de besoin urgent, laissez un message détaillé avec vos coordonnées. Notre cabinet infirmier à Sevran vous rappellera rapidement pour organiser vos soins à domicile.",
-      boldWords: ["cabinet infirmier à Sevran", "soins à domicile"]
+      text: "En cas de besoin urgent, laissez un message détaillé avec vos coordonnées. Notre cabinet infirmier d'Aulnay-sous-Bois vous rappellera dans les plus brefs délais pour organiser vos soins à domicile.",
+      boldWords: ["cabinet infirmier d'Aulnay-sous-Bois", "plus brefs délais", "soins à domicile"]
     }
   ];
 
@@ -69,7 +69,7 @@ const InfoSection = () => {
             />
             <div className="absolute bottom-8 left-8">
                 <a
-                  href="tel:0782910497"
+                  href="tel:+33608759928"
                   className="inline-flex items-center justify-center px-6 py-3 bg-accent/90 hover:bg-accent text-accent-foreground font-semibold rounded-lg shadow-lg text-base transition-colors"
                 >
                   <Image

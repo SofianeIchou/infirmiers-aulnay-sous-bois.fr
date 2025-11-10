@@ -115,7 +115,7 @@ const Header = () => {
 
             <div>
               <a
-                href="tel:0608759928"
+                href="tel:+33608759928"
                 className="flex items-center justify-center gap-x-2 text-white font-semibold rounded-lg transition-all hover:bg-white/10 shadow-[0_0_0_5px_rgba(3,105,161,0.204)] w-[200px] h-[47.5781px] text-lg"
                 style={{ padding: '11.2px 16px' }}
                 aria-label="Appeler le cabinet infirmier au 06 08 75 99 28">

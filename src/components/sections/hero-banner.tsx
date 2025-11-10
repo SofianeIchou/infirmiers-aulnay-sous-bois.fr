@@ -38,7 +38,7 @@ export default function HeroBanner() {
             className="mt-8 h-auto w-full rounded-md bg-primary py-4 px-10 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/50 transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-primary/90 sm:w-auto"
             aria-label="Prendre rendez-vous par téléphone"
           >
-            <a href="tel:0608759928">Prendre Rendez-Vous</a>
+            <a href="tel:+33608759928">Prendre Rendez-Vous</a>
           </Button>
         </div>
       </div>

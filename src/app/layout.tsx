@@ -5,25 +5,30 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Infirmière à Aulnay-sous-Bois | Soins infirmiers à domicile 24h/24",
+  title: "Infirmière à Domicile Aulnay-sous-Bois 24h/24 | Cabinet Infirmier 93600",
   description:
-    "Cabinet infirmier à Aulnay-sous-Bois (93600) - Soins infirmiers à domicile et au cabinet. Prise de sang, pansements, injections, perfusions, chimiothérapie à domicile. Disponible 24h/24 et 7j/7. Tiers-payant intégral. Adresse: 65 allées Pluton, Aulnay-sous-Bois.",
+    "🏥 Cabinet infirmier à Aulnay-sous-Bois - Soins à domicile 24h/24. Prise de sang, pansements, injections, chimiothérapie. Conventionné Sécurité Sociale. Urgences acceptées. ☎️ 06 08 75 99 28",
   keywords: [
-    "infirmière Aulnay-sous-Bois",
     "infirmière à domicile Aulnay-sous-Bois",
-    "soins infirmiers Aulnay-sous-Bois",
+    "soins infirmiers Aulnay-sous-Bois 93600",
     "cabinet infirmier Aulnay-sous-Bois",
-    "prise de sang Aulnay-sous-Bois",
-    "infirmière libérale Aulnay-sous-Bois",
-    "soins à domicile Aulnay-sous-Bois",
-    "pansements Aulnay-sous-Bois",
-    "injections Aulnay-sous-Bois",
-    "chimiothérapie à domicile Aulnay-sous-Bois",
-    "infirmière 93600",
-    "soins infirmiers 24h/24 Aulnay-sous-Bois",
-    "infirmière Sevran",
-    "infirmière Villepinte",
+    "prise de sang domicile Aulnay",
+    "infirmière libérale 93600",
+    "infirmière urgence Aulnay-sous-Bois",
+    "pansements domicile Aulnay-sous-Bois",
+    "injections domicile 93600",
+    "chimiothérapie domicile Aulnay",
+    "soins palliatifs Aulnay-sous-Bois",
+    "surveillance diabète domicile",
+    "infirmière Rose des Vents Aulnay",
+    "soins infirmiers 3000 Aulnay",
+    "cabinet infirmier centre-ville Aulnay",
+    "infirmière Sevran domicile",
+    "soins infirmiers Villepinte",
     "infirmière Livry-Gargan",
+    "cabinet infirmier Tremblay-en-France",
+    "infirmière garde 24h Aulnay-sous-Bois",
+    "cabinet infirmier conventionné 93600",
   ],
   authors: [{ name: "Cabinet Infirmier Aulnay-sous-Bois" }],
   creator: "Cabinet Infirmier Aulnay-sous-Bois",
@@ -40,9 +45,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Infirmière à Aulnay-sous-Bois | Soins infirmiers à domicile 24h/24",
+    title: "Cabinet Infirmier à Aulnay-sous-Bois | Soins à Domicile 24h/24",
     description:
-      "Cabinet infirmier à Aulnay-sous-Bois (93600). Soins infirmiers à domicile et au cabinet. Disponible 24h/24 et 7j/7. Tiers-payant intégral.",
+      "Cabinet infirmier professionnel à Aulnay-sous-Bois (93600). Interventions à domicile 24h/24. Conventionné Sécurité Sociale. Urgences acceptées.",
     url: "/",
     siteName: "Cabinet Infirmier Aulnay-sous-Bois",
     locale: "fr_FR",
@@ -58,9 +63,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Infirmière à Aulnay-sous-Bois | Soins infirmiers à domicile",
+    title: "Cabinet Infirmier Aulnay-sous-Bois | Soins à Domicile 24h/24",
     description:
-      "Cabinet infirmier à Aulnay-sous-Bois. Soins infirmiers à domicile 24h/24 et 7j/7.",
+      "Soins infirmiers professionnels à domicile à Aulnay-sous-Bois. Disponible 24h/24 et 7j/7. Conventionné Sécurité Sociale.",
     images: [
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2262fed0-22e7-46b0-ab76-c4945eba013b-infirmiere-liberale-sevran-fr/assets/images/img-infirmiere_20et_20patient-9.webp",
     ],
@@ -89,6 +94,48 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <meta name="geo.region" content="FR-93" />
+        <meta name="geo.placename" content="Aulnay-sous-Bois" />
+        <meta name="geo.position" content="48.9539;2.4944" />
+        <meta name="ICBM" content="48.9539, 2.4944" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["LocalBusiness", "MedicalBusiness"],
+              "name": "Cabinet Infirmier Aulnay-sous-Bois",
+              "description": "Cabinet infirmier professionnel proposant des soins infirmiers à domicile et au cabinet à Aulnay-sous-Bois et alentours. Disponible 24h/24 et 7j/7.",
+              "url": "https://infirmiere-aulnay-sous-bois.fr",
+              "telephone": "+33608759928",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "65 allées Pluton",
+                "addressLocality": "Aulnay-sous-Bois",
+                "postalCode": "93600",
+                "addressRegion": "Seine-Saint-Denis",
+                "addressCountry": "FR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 48.9539,
+                "longitude": 2.4944
+              },
+              "areaServed": [
+                {"@type": "City", "name": "Aulnay-sous-Bois"},
+                {"@type": "City", "name": "Sevran"},
+                {"@type": "City", "name": "Villepinte"},
+                {"@type": "City", "name": "Livry-Gargan"}
+              ],
+              "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+              "priceRange": "€€",
+              "paymentAccepted": "Carte Vitale, Sécurité Sociale, Mutuelles",
+              "currenciesAccepted": "EUR"
+            }),
+          }}
+        />
+      </head>
       <body className="antialiased">
         <ErrorReporter />
         <Script

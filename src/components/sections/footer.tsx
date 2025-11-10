@@ -26,23 +26,113 @@ const Footer = () => {
     }
   };
 
-  const gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("2 Rue Frédéric Joliot Curie, 93270 Sevran, France")}`;
+  const gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("65 allées Pluton, 93600 Aulnay-sous-Bois, France")}`;
 
   return (
     <>
-      <footer className="bg-[#0071A4] py-10 text-white border-t border-white/20 relative">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-base font-sans">
-            Adresse :{" "}
-            <a
-              href={gmapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-gray-200 transition-colors"
-            >
-              2 Rue Frédéric Joliot Curie, 93270 Sevran, France
-            </a>
-          </p>
+      <footer className="bg-[#0071A4] py-16 text-white border-t border-white/20 relative">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            
+            {/* Contact Principal */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white mb-4">Contact</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-lg">📞</span>
+                  <a 
+                    href="tel:+33608759928" 
+                    className="hover:text-gray-200 transition-colors font-medium"
+                  >
+                    06 08 75 99 28
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-lg mt-1">📍</span>
+                  <a
+                    href={gmapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-200 transition-colors leading-relaxed"
+                  >
+                    65 allées Pluton<br />
+                    93600 Aulnay-sous-Bois
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-lg">🕒</span>
+                  <span className="text-sm">Disponible 24h/24 - 7j/7</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white mb-4">Nos Services</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#services" className="hover:text-gray-200 transition-colors">• Soins à domicile</a></li>
+                <li><a href="#services" className="hover:text-gray-200 transition-colors">• Prises de sang</a></li>
+                <li><a href="#services" className="hover:text-gray-200 transition-colors">• Pansements</a></li>
+                <li><a href="#services" className="hover:text-gray-200 transition-colors">• Injections</a></li>
+                <li><a href="#services" className="hover:text-gray-200 transition-colors">• Chimiothérapie</a></li>
+                <li><a href="#services" className="hover:text-gray-200 transition-colors">• Soins palliatifs</a></li>
+              </ul>
+            </div>
+
+            {/* Zone d'intervention */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white mb-4">Zone d'intervention</h3>
+              <ul className="space-y-2 text-sm">
+                <li><strong>Aulnay-sous-Bois</strong></li>
+                <li className="text-xs pl-2">• Centre-ville</li>
+                <li className="text-xs pl-2">• Rose des Vents</li>
+                <li className="text-xs pl-2">• Les 3000</li>
+                <li className="text-xs pl-2">• Quartier Amitié</li>
+                <li className="mt-3"><strong>Communes limitrophes</strong></li>
+                <li className="text-xs">Sevran • Villepinte • Livry-Gargan</li>
+              </ul>
+            </div>
+
+            {/* Informations légales */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white mb-4">Informations</h3>
+              <ul className="space-y-2 text-sm">
+                <li>✅ Conventionné Sécurité Sociale</li>
+                <li>✅ Tiers-payant intégral</li>
+                <li>✅ Carte Vitale acceptée</li>
+                <li>✅ Toutes mutuelles</li>
+                <li className="mt-3">
+                  <span className="block text-xs text-gray-200">
+                    Infirmières D.E. inscrites<br />
+                    à l'Ordre National des Infirmiers
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          {/* Ligne de séparation */}
+          <div className="border-t border-white/20 pt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+              <div className="text-sm text-gray-200 text-center md:text-left">
+                <p>© {new Date().getFullYear()} Cabinet Infirmier Aulnay-sous-Bois</p>
+                <p className="text-xs mt-1">Tous droits réservés • Soins infirmiers professionnels</p>
+              </div>
+              <div className="text-center md:text-right">
+                <div className="inline-flex items-center gap-4 text-sm">
+                  <button className="hover:text-gray-200 transition-colors">
+                    Mentions légales
+                  </button>
+                  <span className="text-gray-400">•</span>
+                  <button className="hover:text-gray-200 transition-colors">
+                    Politique de confidentialité
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </footer>
       
